@@ -45,3 +45,11 @@ def process_file(args):
     else:
         if not os.path.exists(dst):
             shutil.copy2(src, dst)
+
+def count_images(path):
+    count = 0
+    for root, _, files in os.walk(path):
+        for f in files:
+            if f.lower().endswith((".heic", ".jpg", ".jpeg", ".png")):
+                count += 1
+    return count

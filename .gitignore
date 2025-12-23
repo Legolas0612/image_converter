@@ -1,0 +1,32 @@
+# Ignoriere alle Bilder
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Ignoriere Ordner mit Testdaten
+heic_test_data/
+heic_test_data_converted/
+Test_with_jpeg_same_name/
+Test_with_jpeg_same_name_converted/
+
+
+# Python temporäre Dateien
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE / Editor
+.vscode/
+*.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Betriebssystem spezifisch
+.DS_Store
+Thumbs.db
